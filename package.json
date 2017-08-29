@@ -6,7 +6,8 @@
     "react-scripts": "^1.0.7",
     "react-test-renderer": "^15.5.4",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "mocha": "^3.2.0"
   },
   "dependencies": {
     "babel-core": "^6.22.1",
@@ -17,10 +18,12 @@
     "babel-preset-stage-0": "^6.22.0",
     "react": "^15.5.4",
     "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "mocha-multi": "^0.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "test": "mocha -w test/*.js",
     "build": "react-scripts build",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "eject": "react-scripts eject"
